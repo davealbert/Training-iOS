@@ -8,7 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController <UITextFieldDelegate>
+@interface ViewController : UIViewController <UITextFieldDelegate, UIAlertViewDelegate> {
+  NSArray *alertTextArray;
+}
 
 
 @property (strong, nonatomic) IBOutlet UITextField *nameField;

@@ -20,6 +20,8 @@
   [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
   NSLog(@"viewDidLoad");
+
+  alertTextArray = [[NSArray alloc] initWithObjects:@"One",@"Two",@"Three", nil];
 }
 
 -(void)viewWillAppear:(BOOL)animated {
@@ -44,6 +46,13 @@
 #pragma mark - Supporing Methods
 
 -(void)changeName {
+  UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Change"
+                                                  message:@"You changed the name."
+                                                 delegate:self
+                                        cancelButtonTitle:@"Cancel"
+                                        otherButtonTitles:[alertTextArray objectAtIndex:0],[alertTextArray objectAtIndex:1],[alertTextArray objectAtIndex:2],nil];
+  [alert show];
+
   [[self nameLabel] setText:[[self nameField] text]];
 }
 
@@ -54,6 +63,14 @@
   [textField becomeFirstResponder];
   [textField resignFirstResponder];
   return YES;
+}
+
+- (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex {
+  if (buttonIndex == 0) {
+    NSLog(@"Cancel");
+  } else {
+    NSLog(@"%@",[alertTextArray objectAtIndex:buttonIndex - 1]);
+  }
 }
 
 @end
