@@ -21,6 +21,8 @@
 		503AF53716C247570069160C /* NameScreen.png in Resources */ = {isa = PBXBuildFile; fileRef = 503AF53516C247570069160C /* NameScreen.png */; };
 		503AF53816C247570069160C /* name-ok.png in Resources */ = {isa = PBXBuildFile; fileRef = 503AF53616C247570069160C /* name-ok.png */; };
 		503AF54016C249200069160C /* ok-On.png in Resources */ = {isa = PBXBuildFile; fileRef = 503AF53F16C249200069160C /* ok-On.png */; };
+		50DBB91516C39C0C00270BFF /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 50DBB91316C39C0C00270BFF /* SecondViewController.m */; };
+		50DBB91616C39C0C00270BFF /* SecondViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 50DBB91416C39C0C00270BFF /* SecondViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,6 +45,9 @@
 		503AF53516C247570069160C /* NameScreen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = NameScreen.png; sourceTree = "<group>"; };
 		503AF53616C247570069160C /* name-ok.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "name-ok.png"; sourceTree = "<group>"; };
 		503AF53F16C249200069160C /* ok-On.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ok-On.png"; sourceTree = "<group>"; };
+		50DBB91216C39C0C00270BFF /* SecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
+		50DBB91316C39C0C00270BFF /* SecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
+		50DBB91416C39C0C00270BFF /* SecondViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SecondViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -142,6 +147,8 @@
 			children = (
 				503AF52016C0FC110069160C /* ViewController.h */,
 				503AF52116C0FC110069160C /* ViewController.m */,
+				50DBB91216C39C0C00270BFF /* SecondViewController.h */,
+				50DBB91316C39C0C00270BFF /* SecondViewController.m */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -160,6 +167,7 @@
 			isa = PBXGroup;
 			children = (
 				503AF52316C0FC110069160C /* ViewController.xib */,
+				50DBB91416C39C0C00270BFF /* SecondViewController.xib */,
 			);
 			name = Xib;
 			sourceTree = "<group>";
@@ -223,6 +231,7 @@
 				503AF53716C247570069160C /* NameScreen.png in Resources */,
 				503AF53816C247570069160C /* name-ok.png in Resources */,
 				503AF54016C249200069160C /* ok-On.png in Resources */,
+				50DBB91616C39C0C00270BFF /* SecondViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -236,6 +245,7 @@
 				503AF51516C0FC110069160C /* main.m in Sources */,
 				503AF51916C0FC110069160C /* AppDelegate.m in Sources */,
 				503AF52216C0FC110069160C /* ViewController.m in Sources */,
+				50DBB91516C39C0C00270BFF /* SecondViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

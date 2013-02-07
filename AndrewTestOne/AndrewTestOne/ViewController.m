@@ -26,6 +26,7 @@
 	// Do any additional setup after loading the view, typically from a nib.
   NSLog(@"viewDidLoad");
 
+  [self.nameLabel setText:@"Enter Name"];
   alertTextArray = [[NSArray alloc] initWithObjects:@"One",@"Two",@"Three", nil];
 }
 
@@ -55,8 +56,11 @@
 #pragma mark - Supporing Methods
 
 - (void)changeName {
+  
   UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Change"
-                                                  message:@"You changed the name."
+                                                  message:[NSString stringWithFormat:@"You changed the name to %@.",
+                                                           [[self nameField] text]]
+                        
                                                  delegate:self
                                         cancelButtonTitle:@"Cancel"
                                         otherButtonTitles:[alertTextArray objectAtIndex:0],[alertTextArray objectAtIndex:1],[alertTextArray objectAtIndex:2],nil];
@@ -80,6 +84,10 @@
   } else {
     NSLog(@"%@",[alertTextArray objectAtIndex:buttonIndex - 1]);
   }
+  
+  SecondViewController *svc = [[SecondViewController alloc] initWithNibName:@"SecondViewController" bundle:nil];
+  [svc setModalTransitionStyle:UIModalTransitionStyleCoverVertical];
+  [self presentModalViewController:svc animated:YES];
 }
 
 @end
