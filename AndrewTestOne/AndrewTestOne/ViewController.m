@@ -9,10 +9,15 @@
 #import "ViewController.h"
 
 @interface ViewController ()
-
+- (void)changeName;
 @end
 
+
+
 @implementation ViewController
+
+@synthesize nameLabel = _nameLabel;
+@synthesize nameField = _nameField;
 
 #pragma mark - View Lifecycle
 
@@ -37,6 +42,10 @@
   // Dispose of any resources that can be recreated.
 }
 
+- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation {
+  return (UIInterfaceOrientationIsLandscape(toInterfaceOrientation));
+}
+
 #pragma mark - User Interaction Methods
 
 - (IBAction)okPressed:(id)sender {
@@ -45,7 +54,7 @@
 
 #pragma mark - Supporing Methods
 
--(void)changeName {
+- (void)changeName {
   UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Change"
                                                   message:@"You changed the name."
                                                  delegate:self
