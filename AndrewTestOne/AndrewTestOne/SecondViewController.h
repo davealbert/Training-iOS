@@ -10,4 +10,8 @@
 
 @interface SecondViewController : UIViewController
 
+@property (assign, nonatomic) int myInt;
+
+- (IBAction)closeSelf:(id)sender;
+
 @end

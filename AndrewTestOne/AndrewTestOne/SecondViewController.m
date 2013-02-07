@@ -9,6 +9,7 @@
 #import "SecondViewController.h"
 
 @implementation SecondViewController
+@synthesize myInt = _myInt;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -23,7 +24,7 @@
 {
     // Releases the view if it doesn't have a superview.
     [super didReceiveMemoryWarning];
-    
+
     // Release any cached data, images, etc that aren't in use.
 }
 
@@ -44,6 +45,12 @@
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation {
   return (UIInterfaceOrientationIsLandscape(toInterfaceOrientation));
+}
+
+#pragma mark - User Interaction Methods
+
+- (IBAction)closeSelf:(id)sender {
+  [self dismissModalViewControllerAnimated:YES];
 }
 
 @end
