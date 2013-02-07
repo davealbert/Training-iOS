@@ -8,6 +8,21 @@
 
 #import "SecondViewController.h"
 
+@interface UIScrollView (BigXib)
+-(void)addSelfToView:(UIView *)theView below:(UIView *)below;
+@end
+
+@implementation UIScrollView (BigXib)
+-(void)addSelfToView:(UIView *)theView below:(UIView *)below {
+  [self setContentSize:self.frame.size];
+  [self setFrame:theView.frame];
+  
+  [theView insertSubview:self belowSubview:below];
+}
+@end
+
+
+
 @implementation SecondViewController
 
 @synthesize myInt        = _myInt;
@@ -35,10 +50,7 @@
   [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
   
-  [self.myScrollView setContentSize:self.myScrollView.frame.size];
-  [self.myScrollView setFrame:self.view.frame];
-
-  [self.view insertSubview:self.myScrollView belowSubview:self.closeButton];
+  [self.myScrollView addSelfToView:self.view below:self.closeButton];
 }
 
 - (void)viewDidUnload {
