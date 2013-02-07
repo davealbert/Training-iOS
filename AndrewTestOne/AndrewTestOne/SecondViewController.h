@@ -11,6 +11,8 @@
 @interface SecondViewController : UIViewController
 
 @property (assign, nonatomic) int myInt;
+@property (strong, nonatomic) IBOutlet UIScrollView *myScrollView;
+@property (strong, nonatomic) IBOutlet UIButton *closeButton;
 
 - (IBAction)closeSelf:(id)sender;
 
