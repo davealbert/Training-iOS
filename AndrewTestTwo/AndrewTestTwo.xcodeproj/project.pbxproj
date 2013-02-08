@@ -19,6 +19,7 @@
 		505A6E5E16C4E7E70071E992 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 505A6E5D16C4E7E70071E992 /* ViewController.m */; };
 		505A6E6116C4E7E70071E992 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 505A6E5F16C4E7E70071E992 /* ViewController.xib */; };
 		505A6E6916C4E90D0071E992 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 505A6E6816C4E90D0071E992 /* Person.m */; };
+		505A6E6C16C4EE290071E992 /* Programer.m in Sources */ = {isa = PBXBuildFile; fileRef = 505A6E6B16C4EE290071E992 /* Programer.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,8 @@
 		505A6E6016C4E7E70071E992 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
 		505A6E6716C4E90C0071E992 /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
 		505A6E6816C4E90D0071E992 /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
+		505A6E6A16C4EE290071E992 /* Programer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Programer.h; sourceTree = "<group>"; };
+		505A6E6B16C4EE290071E992 /* Programer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Programer.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +95,8 @@
 				505A6E5D16C4E7E70071E992 /* ViewController.m */,
 				505A6E6716C4E90C0071E992 /* Person.h */,
 				505A6E6816C4E90D0071E992 /* Person.m */,
+				505A6E6A16C4EE290071E992 /* Programer.h */,
+				505A6E6B16C4EE290071E992 /* Programer.m */,
 				505A6E5F16C4E7E70071E992 /* ViewController.xib */,
 				505A6E4B16C4E7E70071E992 /* Supporting Files */,
 			);
@@ -182,6 +187,7 @@
 				505A6E5516C4E7E70071E992 /* AppDelegate.m in Sources */,
 				505A6E5E16C4E7E70071E992 /* ViewController.m in Sources */,
 				505A6E6916C4E90D0071E992 /* Person.m in Sources */,
+				505A6E6C16C4EE290071E992 /* Programer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

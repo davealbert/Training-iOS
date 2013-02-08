@@ -19,13 +19,18 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
   
-  Person *dave = [[Person alloc] init];
+  Programer *dave = [[Programer alloc] init];
   dave.firstName = @"Dave";
   [dave setLastName:@"Albert"];
   dave.age = 37;
   dave.sex = kMale;
   
-  NSLog(@"%@",[dave description]);
+  [dave.languages addObject:@"Objective-C"];
+  [dave.languages addObject:@"PHP"];
+  [dave.languages addObject:@"Pascal"];
+  [dave.languages addObject:@"Javascript"];
+  
+  NSLog(@"%@",[dave cv]);
 }
 
 - (void)didReceiveMemoryWarning

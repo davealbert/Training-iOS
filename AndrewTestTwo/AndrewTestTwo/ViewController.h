@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "Person.h"
+#import "Programer.h"
 
 @interface ViewController : UIViewController
 
