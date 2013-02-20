@@ -18,6 +18,12 @@
 		5017CFAD16D4BAF3004BF0A1 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5017CFAC16D4BAF3004BF0A1 /* Default-568h@2x.png */; };
 		5017CFB016D4BAF3004BF0A1 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5017CFAF16D4BAF3004BF0A1 /* ViewController.m */; };
 		5017CFB316D4BAF3004BF0A1 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5017CFB116D4BAF3004BF0A1 /* ViewController.xib */; };
+		5017CFBB16D4BBF5004BF0A1 /* OurTable.m in Sources */ = {isa = PBXBuildFile; fileRef = 5017CFBA16D4BBF5004BF0A1 /* OurTable.m */; };
+		5017CFBD16D4BC4B004BF0A1 /* OurTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5017CFBC16D4BC4B004BF0A1 /* OurTableCell.xib */; };
+		5017CFBF16D4BCF3004BF0A1 /* tableData.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5017CFBE16D4BCF3004BF0A1 /* tableData.plist */; };
+		5017CFC216D4BD24004BF0A1 /* OurTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5017CFC116D4BD24004BF0A1 /* OurTableCell.m */; };
+		5017CFC516D4BEA9004BF0A1 /* OurData.m in Sources */ = {isa = PBXBuildFile; fileRef = 5017CFC416D4BEA9004BF0A1 /* OurData.m */; };
+		5017CFC816D4BF79004BF0A1 /* OurElement.m in Sources */ = {isa = PBXBuildFile; fileRef = 5017CFC716D4BF79004BF0A1 /* OurElement.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +43,16 @@
 		5017CFAE16D4BAF3004BF0A1 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		5017CFAF16D4BAF3004BF0A1 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		5017CFB216D4BAF3004BF0A1 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
+		5017CFB916D4BBF5004BF0A1 /* OurTable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OurTable.h; sourceTree = "<group>"; };
+		5017CFBA16D4BBF5004BF0A1 /* OurTable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OurTable.m; sourceTree = "<group>"; };
+		5017CFBC16D4BC4B004BF0A1 /* OurTableCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OurTableCell.xib; sourceTree = "<group>"; };
+		5017CFBE16D4BCF3004BF0A1 /* tableData.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = tableData.plist; sourceTree = "<group>"; };
+		5017CFC016D4BD24004BF0A1 /* OurTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OurTableCell.h; sourceTree = "<group>"; };
+		5017CFC116D4BD24004BF0A1 /* OurTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OurTableCell.m; sourceTree = "<group>"; };
+		5017CFC316D4BEA9004BF0A1 /* OurData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OurData.h; sourceTree = "<group>"; };
+		5017CFC416D4BEA9004BF0A1 /* OurData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OurData.m; sourceTree = "<group>"; };
+		5017CFC616D4BF78004BF0A1 /* OurElement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OurElement.h; sourceTree = "<group>"; };
+		5017CFC716D4BF79004BF0A1 /* OurElement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OurElement.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +72,7 @@
 		5017CF8A16D4BAF3004BF0A1 = {
 			isa = PBXGroup;
 			children = (
+				5017CFBE16D4BCF3004BF0A1 /* tableData.plist */,
 				5017CF9C16D4BAF3004BF0A1 /* AndrewTestThree */,
 				5017CF9516D4BAF3004BF0A1 /* Frameworks */,
 				5017CF9416D4BAF3004BF0A1 /* Products */,
@@ -88,6 +105,15 @@
 				5017CFAE16D4BAF3004BF0A1 /* ViewController.h */,
 				5017CFAF16D4BAF3004BF0A1 /* ViewController.m */,
 				5017CFB116D4BAF3004BF0A1 /* ViewController.xib */,
+				5017CFB916D4BBF5004BF0A1 /* OurTable.h */,
+				5017CFBA16D4BBF5004BF0A1 /* OurTable.m */,
+				5017CFBC16D4BC4B004BF0A1 /* OurTableCell.xib */,
+				5017CFC016D4BD24004BF0A1 /* OurTableCell.h */,
+				5017CFC116D4BD24004BF0A1 /* OurTableCell.m */,
+				5017CFC316D4BEA9004BF0A1 /* OurData.h */,
+				5017CFC416D4BEA9004BF0A1 /* OurData.m */,
+				5017CFC616D4BF78004BF0A1 /* OurElement.h */,
+				5017CFC716D4BF79004BF0A1 /* OurElement.m */,
 				5017CF9D16D4BAF3004BF0A1 /* Supporting Files */,
 			);
 			path = AndrewTestThree;
@@ -163,6 +189,8 @@
 				5017CFAB16D4BAF3004BF0A1 /* Default@2x.png in Resources */,
 				5017CFAD16D4BAF3004BF0A1 /* Default-568h@2x.png in Resources */,
 				5017CFB316D4BAF3004BF0A1 /* ViewController.xib in Resources */,
+				5017CFBD16D4BC4B004BF0A1 /* OurTableCell.xib in Resources */,
+				5017CFBF16D4BCF3004BF0A1 /* tableData.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -176,6 +204,10 @@
 				5017CFA316D4BAF3004BF0A1 /* main.m in Sources */,
 				5017CFA716D4BAF3004BF0A1 /* AppDelegate.m in Sources */,
 				5017CFB016D4BAF3004BF0A1 /* ViewController.m in Sources */,
+				5017CFBB16D4BBF5004BF0A1 /* OurTable.m in Sources */,
+				5017CFC216D4BD24004BF0A1 /* OurTableCell.m in Sources */,
+				5017CFC516D4BEA9004BF0A1 /* OurData.m in Sources */,
+				5017CFC816D4BF79004BF0A1 /* OurElement.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
